@@ -15,7 +15,9 @@ Execute the `src/set-unicoderange.py` script on the command line with one or mor
 $ python3 set-unicoderange.py [FONT PATH 1] (FONT PATH 2)...(FONT PATH n)
 ```
 
-The script detects the code points available in the font and automatically sets the OpenType OS/2.ulUnicodeRange bit flags 1 - 4.
+The script detects the code points available in the font and automatically sets the OpenType OS/2.ulUnicodeRange bit flags 1 - 4. If *any* code point is found in a range, the corresponding range bit is set.  If there are no code points in a range, the corresponding range bit is cleared.
+
+The font write is in place on the path that you enter on the command line.
 
 ### Example
 
