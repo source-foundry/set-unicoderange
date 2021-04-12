@@ -39,6 +39,8 @@ import sys
 
 from fontTools.ttLib import TTFont
 
+VERSION = "0.1.0"
+
 bit0 = [(0x0000, 0x007F)]
 bit1 = [(0x0080, 0x00FF)]
 bit2 = [(0x0100, 0x017F)]
@@ -399,4 +401,7 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    if sys.argv[1] == "-v" or sys.argv[1] == "--version":
+        print(VERSION)
+    else:
+        main(sys.argv[1:])
