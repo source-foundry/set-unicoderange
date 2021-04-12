@@ -26,7 +26,7 @@
 # in fonts based on the Unicode code points that are present in one or more
 # fonts passed as command line arguments.
 #
-# Dependency: fontTools Python package, cPython 3.6+
+# Dependencies: fontTools Python package, cPython 3.6+
 #
 # Syntax:
 #  $ python3 set-unicoderange.py [FONT PATH 1] (FONT PATH 2) ... (FONT PATH n)
