@@ -320,7 +320,7 @@ def generate_128bit_bitflag_from_32bit_bitflags(bitflag1, bitflag2, bitflag3, bi
 
 
 def generate_shifted_32bit_unicoderange(bitflag, shift):
-    # 32-bit int with all 32 bits set to be used as & mask
+    # 32-bit int with all 32 bits set as & operator mask
     mask = 2 ** 32 - 1
     return (bitflag >> shift) & mask
 
