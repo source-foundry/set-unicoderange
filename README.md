@@ -23,6 +23,10 @@ The script detects the code points available in the font and automatically sets 
 $ python3 set-unicoderange.py SomeFont-Regular.ttf
 ```
 
+### Changes
+
+Please see the [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 Apache License, Version 2.0.  Please see [LICENSE](LICENSE) for details.
